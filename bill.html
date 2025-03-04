@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 15px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .header img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .header h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .details, .table-section, .footer {
+            margin-top: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: left;
+        }
+
+        .footer {
+            text-align: right;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        /* Print-specific styles */
+        @media print {
+            body {
+                
+                margin: 0;
+                padding: 0;
+            }
+            
+            .container {
+                border: none;
+                width: 100%;
+                max-width: none;
+                padding: 5px;
+            }
+            
+            table, th, td {
+                font-size: 12px;
+                padding: 3px;
+            }
+            
+            .header img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .header h1 {
+                font-size: 18px;
+            }
+
+            .footer {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo.jpg" alt="Logo">
+            <div>
+                <h1>Eco Transport Solutions Pvt Ltd.</h1>
+                <p>Manage Logistics Professionally</p>
+            </div>
+            <p><strong>Branch Code: 382006</strong></p>
+        </div>
+
+        <div class="table-section">
+            <table>
+                <tr>
+                    <th>Notice</th>
+                    <th>AT Owner's Risk</th>
+                    <th>LR Details</th>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas atque architecto repellendus quam.</td>
+                    <td>GST No: 2444454<br>PAN No: 2555DF<br>CIN No: 200255555<br>TPT Reg. No: 265565656</td>
+                    <td>LR Date: 13-2-25<br>LR No: 25-5-25<br>Truck No: GJ01UB5925<br>From: Ahmedabad to Delhi<br>Driver: RAMU KAKA<br>Mobile: 12121212</td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>Consignor</th>
+                    <th>Consignee</th>
+                    <th>Insurance</th>
+                </tr>
+                <tr>
+                    <td><strong>AMAZON INDIA PRIVATE LIMITED</strong><br>GST No: 23AB554545<br>Mobile: 5586668885<br>Address: 905, Alliance Business Park, Ahmedabad - 380001</td>
+                    <td><strong>AMAZON INDIA PRIVATE LIMITED</strong><br>GST No: 24AB121515<br>Mobile: 524546545<br>Address: Mithakhali, Delhi - 110001</td>
+                    <td>Insurance Status: "Insured"<br>Insured by: LIC General Insurance<br>Policy No: 2024/12154<br>Amount: ₹20,000</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="footer">
+            <p><strong>Total Freight:</strong> ₹ 50,960</p>
+            <p>Authorized Signatory: Sanket</p>
+        </div>
+    </div>
+</body>
+</html>
